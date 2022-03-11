@@ -22,5 +22,7 @@ time_stamp = str(date.today())
 with open(name, mode='w', encoding='utf-8', newline='') as f:
     writer =  csv.writer(f)
     writer.writerow([name, time_stamp])
+    writer.writerow(["time_stamp", "name", "answerer"])
+
 
 
